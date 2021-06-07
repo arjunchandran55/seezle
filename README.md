@@ -13,4 +13,4 @@ This [video](https://drive.google.com/file/d/1vrSJZqPxpIexCAv9wBrOMc5wKNstJg9p/v
 	* Run `npm install`
 	* Run `npm start`
 
-**Note:** *You might need to changes the api url in the ui config folder.*
+**Note:** *You might need to changes the api url in the ui config folder (calculator-app\src\config).*
