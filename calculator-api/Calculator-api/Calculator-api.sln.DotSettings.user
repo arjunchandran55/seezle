@@ -1,0 +1,35 @@
+﻿<wpf:ResourceDictionary xml:space="preserve" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:ss="urn:shemas-jetbrains-com:settings-storage-xaml" xmlns:wpf="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=42d8a690_002D722a_002D4838_002Db840_002D76dc2658a5b1/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="SumExpression_returns_correct_value #3" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;TestAncestor&gt;&#xD;
+    &lt;TestId&gt;xUnit::BA81AFD9-3202-4F57-91C1-F5181DD0B10C::net5.0::Calculator_api_tests.CalculatorApiTest.SumExpression_returns_correct_value&lt;/TestId&gt;&#xD;
+  &lt;/TestAncestor&gt;&#xD;
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=4b1153f2_002Da5fd_002D46ae_002D80f7_002D868d67354f80/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="SumExpression_returns_correct_value #2" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;TestAncestor&gt;&#xD;
+    &lt;TestId&gt;xUnit::BA81AFD9-3202-4F57-91C1-F5181DD0B10C::net5.0::Calculator_api_tests.CalculatorApiTest.SumExpression_returns_correct_value&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::BA81AFD9-3202-4F57-91C1-F5181DD0B10C::net5.0::Calculator_api_tests.CalculatorApiTest.SubtractExpression_returns_correct_value&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::BA81AFD9-3202-4F57-91C1-F5181DD0B10C::net5.0::Calculator_api_tests.CalculatorApiTest.DivisionExpression_returns_correct_value&lt;/TestId&gt;&#xD;
+  &lt;/TestAncestor&gt;&#xD;
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=a701e806_002D9ec2_002D4949_002D86e8_002D9952e98b2df9/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="SumExpression_returns_correct_value" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;TestAncestor&gt;&#xD;
+    &lt;TestId&gt;xUnit::BA81AFD9-3202-4F57-91C1-F5181DD0B10C::net5.0::Calculator_api_tests.CalculatorApiTest.SumExpression_returns_correct_value&lt;/TestId&gt;&#xD;
+  &lt;/TestAncestor&gt;&#xD;
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=cb9b6a6f_002Dc7d2_002D4187_002D91b0_002D7fa94ed43703/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="TestCalculateFunction_For_List #2" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;TestAncestor&gt;&#xD;
+    &lt;TestId&gt;xUnit::BA81AFD9-3202-4F57-91C1-F5181DD0B10C::net5.0::Calculator_api_tests.CalculatorApiTest.TestCalculateFunction_For_List&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::BA81AFD9-3202-4F57-91C1-F5181DD0B10C::net5.0::Calculator_api_tests.CalculatorApiTest.DivisionExpression_returns_correct_value&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::BA81AFD9-3202-4F57-91C1-F5181DD0B10C::net5.0::Calculator_api_tests.CalculatorApiTest.MultiplicationExpression_returns_correct_value&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::BA81AFD9-3202-4F57-91C1-F5181DD0B10C::net5.0::Calculator_api_tests.CalculatorApiTest.NestedExpression_returns_correct_value&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::BA81AFD9-3202-4F57-91C1-F5181DD0B10C::net5.0::Calculator_api_tests.CalculatorApiTest.NestedExpression_with_decimals_returns_correct_value&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::BA81AFD9-3202-4F57-91C1-F5181DD0B10C::net5.0::Calculator_api_tests.CalculatorApiTest.NestedExpression_with_multiple_decimal_values_returns_correct_result&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::BA81AFD9-3202-4F57-91C1-F5181DD0B10C::net5.0::Calculator_api_tests.CalculatorApiTest.Divide_by_zero_returns_correct_message&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::BA81AFD9-3202-4F57-91C1-F5181DD0B10C::net5.0::Calculator_api_tests.CalculatorApiTest.NestedSumExpression_returns_correct_value&lt;/TestId&gt;&#xD;
+  &lt;/TestAncestor&gt;&#xD;
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=e1974da8_002D8178_002D46e4_002Db32e_002Df5212a9cbf93/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="TestCalculateFunction_For_List" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;TestAncestor&gt;&#xD;
+    &lt;TestId&gt;xUnit::BA81AFD9-3202-4F57-91C1-F5181DD0B10C::net5.0::Calculator_api_tests.CalculatorApiTest.TestCalculateFunction_For_List&lt;/TestId&gt;&#xD;
+  &lt;/TestAncestor&gt;&#xD;
+&lt;/SessionState&gt;</s:String></wpf:ResourceDictionary>
