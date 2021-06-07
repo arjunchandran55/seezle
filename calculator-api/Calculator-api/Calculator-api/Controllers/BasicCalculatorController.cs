@@ -7,7 +7,7 @@ using Microsoft.Extensions.Logging;
 namespace Calculator_api.Controllers
 {
     [ApiController]
-    [Route("[controller]")]
+    [Route("basic-calculator")]
     public class BasicCalculatorController : ControllerBase
     {
         private readonly ILogger<BasicCalculatorController> _logger;

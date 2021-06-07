@@ -30,36 +30,45 @@ namespace Calculator_api.Providers.BasicCalculator
 
             return Task.FromResult(new CalculatorResponse
             {
-                ExpressionResult = result.ToString(CultureInfo.InvariantCulture)
+                ExpressionResult = Math.Round(result, 4).ToString(CultureInfo.InvariantCulture)
             });
         }
 
         private List<string> GenerateExpressionList(string expression)
         {
-            List<string> expressions = new List<string>();
+            List<string> expressionList = new List<string>();
             for (int i = 0; i < expression.Length; i++)
             {
                 var currentValue = expression[i];
                 if (currentValue == ' ') continue; // Skip spaces
 
+                if (i == 0 && (currentValue == '*' || currentValue == '/')) throw new ArgumentException("Incorrect expression.");
+
                 if (currentValue == '.') // handle decimal numbers
                 {
-                    var lastIndex = expressions.Count - 1;
-                    var prevNumber = "" + expressions[lastIndex] + currentValue;
+                    var lastIndex = expressionList.Count - 1;
+                    var prevNumber = "" + expressionList[lastIndex] + currentValue;
                     while (i + 1 < expression.Length && !IsOperator(expression[i + 1]))
                     {
                         prevNumber += expression[i + 1];
                         i += 1;
                     }
 
-                    expressions[lastIndex] = prevNumber;
+                    expressionList[lastIndex] = prevNumber;
+                    continue;
+                }
+                
+                // Current value is continuous digit or first element is a signed number
+                if ((i > 0 && Char.IsDigit(expression[i - 1]) && !IsOperator(currentValue)) || (i == 1 && IsOperator(expression[i - 1]) && Char.IsDigit(currentValue)))
+                {
+                    expressionList[expressionList.Count - 1] += currentValue.ToString();
                     continue;
                 }
 
-                expressions.Add(currentValue.ToString());
+                expressionList.Add(currentValue.ToString());
             }
 
-            return expressions;
+            return expressionList;
         }
 
         public bool IsOperator(char c)
@@ -90,7 +99,7 @@ namespace Calculator_api.Providers.BasicCalculator
                 
                 case "+": return Double.Parse(firstOperand) + EvaluateExpressionList(expressions, start+2, Double.Parse(secondOperand));
                 
-                case "-": return Double.Parse(firstOperand) - EvaluateExpressionList(expressions, start+2, Double.Parse(secondOperand));
+                case "-": return Double.Parse(firstOperand) + EvaluateExpressionList(expressions, start+2, -Double.Parse(secondOperand));
                 
                 case "*": return EvaluateExpressionList(expressions, start+2, (Double.Parse(firstOperand) * Double.Parse(secondOperand)));
             }

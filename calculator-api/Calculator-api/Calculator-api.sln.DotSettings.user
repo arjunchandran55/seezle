@@ -26,6 +26,9 @@
     &lt;TestId&gt;xUnit::BA81AFD9-3202-4F57-91C1-F5181DD0B10C::net5.0::Calculator_api_tests.CalculatorApiTest.NestedExpression_with_multiple_decimal_values_returns_correct_result&lt;/TestId&gt;&#xD;
     &lt;TestId&gt;xUnit::BA81AFD9-3202-4F57-91C1-F5181DD0B10C::net5.0::Calculator_api_tests.CalculatorApiTest.Divide_by_zero_returns_correct_message&lt;/TestId&gt;&#xD;
     &lt;TestId&gt;xUnit::BA81AFD9-3202-4F57-91C1-F5181DD0B10C::net5.0::Calculator_api_tests.CalculatorApiTest.NestedSumExpression_returns_correct_value&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::BA81AFD9-3202-4F57-91C1-F5181DD0B10C::net5.0::Calculator_api_tests.CalculatorApiTest.NestedSumExpression_with_2_digit_number_returns_correct_value&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::BA81AFD9-3202-4F57-91C1-F5181DD0B10C::net5.0::Calculator_api_tests.CalculatorApiTest.NestedSubtractExpression_returns_correct_value&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::BA81AFD9-3202-4F57-91C1-F5181DD0B10C::net5.0::Calculator_api_tests.CalculatorApiTest.SubtractExpression_returns_correct_value&lt;/TestId&gt;&#xD;
   &lt;/TestAncestor&gt;&#xD;
 &lt;/SessionState&gt;</s:String>
 	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=e1974da8_002D8178_002D46e4_002Db32e_002Df5212a9cbf93/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="TestCalculateFunction_For_List" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;

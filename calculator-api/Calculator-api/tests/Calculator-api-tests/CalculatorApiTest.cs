@@ -24,6 +24,10 @@ namespace Calculator_api_tests
             var result = await basicCalculatorProvider.Calculate("2-1");
             var expectedResult = "1";
             Assert.Equal(result.ExpressionResult, expectedResult);
+            
+            result = await basicCalculatorProvider.Calculate("-2-1");
+            expectedResult = "-3";
+            Assert.Equal(result.ExpressionResult, expectedResult);
         }
         
         [Fact]
@@ -40,7 +44,12 @@ namespace Calculator_api_tests
         {
             var basicCalculatorProvider = new CalculatorProvider().Provide(CalculatorType.Basic);
             var result = await basicCalculatorProvider.Calculate("2*2");
-            const string expectedResult = "4";
+            var expectedResult = "4";
+            Assert.Equal(result.ExpressionResult, expectedResult);
+            
+            basicCalculatorProvider = new CalculatorProvider().Provide(CalculatorType.Basic);
+            result = await basicCalculatorProvider.Calculate("100*8.80");
+            expectedResult = "880";
             Assert.Equal(result.ExpressionResult, expectedResult);
         }
         
@@ -67,7 +76,7 @@ namespace Calculator_api_tests
         {
             var basicCalculatorProvider = new CalculatorProvider().Provide(CalculatorType.Basic);
             var result = await basicCalculatorProvider.Calculate("1+2.51+3.523/2.02*2.02");
-            const string expectedResult = "7.0329999999999995";
+            const string expectedResult = "7.033";
             Assert.Equal(result.ExpressionResult, expectedResult);
         }
 
@@ -77,6 +86,26 @@ namespace Calculator_api_tests
             var basicCalculatorProvider = new CalculatorProvider().Provide(CalculatorType.Basic);
             var result = await basicCalculatorProvider.Calculate("1+2+1+3");
             const string expectedResult = "7";
+            Assert.Equal(result.ExpressionResult, expectedResult);
+        }
+        
+        [Fact]
+        public async void NestedSubtractExpression_returns_correct_value()
+        {
+            var basicCalculatorProvider = new CalculatorProvider().Provide(CalculatorType.Basic);
+            var result = await basicCalculatorProvider.Calculate("78.5-63.444444-7777.25");
+            const string expectedResult = "-7762.1944";
+            Assert.Equal(result.ExpressionResult, expectedResult);
+            // "78.5-63.444444-7777.25"
+        }
+        
+        
+        [Fact]
+        public async void NestedSumExpression_with_2_digit_number_returns_correct_value()
+        {
+            var basicCalculatorProvider = new CalculatorProvider().Provide(CalculatorType.Basic);
+            var result = await basicCalculatorProvider.Calculate("11+22+11+33");
+            const string expectedResult = "77";
             Assert.Equal(result.ExpressionResult, expectedResult);
         }
         

@@ -2,9 +2,10 @@ import { useInjection } from "inversify-react";
 import { Button, ButtonGroup, Container, Row } from "react-bootstrap";
 import {CalculatorStore} from "../stores/CalculatorStore";
 import { observer } from 'mobx-react';
+import { TYPES } from "../Types";
 
 const Keypad = () => {
-    const store = useInjection(CalculatorStore);
+    const store: CalculatorStore = useInjection(TYPES.CalculatorStore);
 
     const lastInputValue = () => store.inputExpression.slice((store.inputExpression.length - 1), store.inputExpression.length);
 
@@ -21,9 +22,18 @@ const Keypad = () => {
         else store.setExpression(store.inputExpression + currentInput);
     };
 
+    const calculateExpression = () => {
+        store.calculate();
+    }
+
     return <Container>
     <br/>
-    <Row><Button variant="primary" size="lg" block onClick={() => store.clearExpression() }>Clear</Button></Row> <br/>
+    <Row>
+        <ButtonGroup size="lg" className="justify">
+            <Button variant="primary" size="lg" className="btn-num" block onClick={() => store.clearExpression() }>CL</Button> &nbsp;
+            <Button variant="primary" size="lg" className="btn-num" onClick={() => store.deleteLast() }> {"<"} </Button>
+        </ButtonGroup>
+    </Row> <br/>
     <Row>
       <ButtonGroup size="lg" className="mb-2">
           <Button variant="primary" size="sm" className="btn-num" value={1} onClick={setExpression}>1</Button>
@@ -55,7 +65,7 @@ const Keypad = () => {
           <ButtonGroup size="lg" className="mb-2">
               <Button variant="primary" size="sm" className="btn-num" value={"."} onClick={setExpression}>.</Button>
               <Button variant="primary" size="sm" className="btn-num" value={0} onClick={setExpression}>0</Button>
-              <Button variant="primary" size="sm" className="btn-num" value={"="} onClick={setExpression}>=</Button> &nbsp;
+              <Button variant="primary" size="sm" className="btn-num" value={"="} onClick={calculateExpression}>=</Button> &nbsp;
               <Button variant="primary" size="sm" className="btn-num" value={"*"} onClick={setExpression}>x</Button>
           </ButtonGroup>
       </Row>
