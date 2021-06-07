@@ -6,7 +6,7 @@ This [video](https://drive.google.com/file/d/1vrSJZqPxpIexCAv9wBrOMc5wKNstJg9p/v
 
  1. Calculator local setup requires [Node.js](https://nodejs.org/) and
     .NET to run.
-2. Clone both projects in a folder.    
+2. Clone (calculator-api)[https://github.com/arjunchandran55/seezle/blob/0f8d246391dcf56153aa807416ffcececce1f5ed/calculator-api/Calculator-api] and (calculator-ui)[https://github.com/arjunchandran55/seezle/blob/0f8d246391dcf56153aa807416ffcececce1f5ed/calculator-app] projects in a folder.    
 3. Open calculator-api app in visual studio or rider app.    
 4. Run the app using the any of the above mentioned IDE. (Note down the local host url)
 5. Open calculator-app in vscode.
